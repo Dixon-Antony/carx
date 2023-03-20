@@ -12,11 +12,13 @@ const Card = (props) => {
         <h2>
           {props.brand} &nbsp;<span>{props.model}</span>
         </h2>
-        <h2>{props.price}</h2>
+        <h2>{props.price} Lacs</h2>
       </div>
       <div className={styles["card-content-2"]}>
         <h3>{props.make}</h3>
-        <h3>{props.kms}</h3>
+        <h3>
+          {props.kms} <span>kms</span>
+        </h3>
         <h3>{props.transmission}</h3>
       </div>
       <div className={styles["card-content-3"]}>

@@ -43,13 +43,18 @@
 }
 
 .card-content-1 span {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .card-content-2 {
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+
+.card-content-2 span {
+  font-size: 0.8rem;
+  color: grey;
 }
 
 .card-btn {
