@@ -1,0 +1,19 @@
+.btn button {
+  padding: 15px 30px;
+  border: 1px solid black;
+  border-radius: 25px 0 25px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-transform: uppercase;
+  font-family: Quicksand;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  /* transform: scale(1.1); */
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 0 25px 0 25px;
+}

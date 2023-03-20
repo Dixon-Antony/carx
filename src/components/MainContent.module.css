@@ -1,0 +1,14 @@
+.main-heading {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  text-decoration: uppercase;
+}
+
+.main-content {
+  padding-top: 100px;
+  padding-left: 100px;
+  height: 100%;
+  width: 100%;
+  background: url("../../public/img/porsche1.jpg") no-repeat center center/cover;
+}
