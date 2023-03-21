@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "./Catalog.module.css";
 import Card from "./Card";
+import cars from "./data";
+import { useLoaderData } from "react-router-dom";
 
-const Catalog = (props) => {
+const Catalog = () => {
+  const cars = useLoaderData();
+
   return (
     <div className={styles["card-items"]}>
-      {props.cars.map((car) => (
+      {cars.map((car) => (
         <Card
           key={car.id}
           id={car.id}
@@ -24,3 +28,7 @@ const Catalog = (props) => {
 };
 
 export default Catalog;
+
+export function loader() {
+  return cars;
+}

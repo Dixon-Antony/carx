@@ -1,3 +1,55 @@
-.heading {
+.carDetail {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+  padding: 40px;
+  margin: 80px;
+  height: 100%;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  width: 70%;
+}
+
+.carDetail .img {
+  height: 300px;
+  width: 400px;
+}
+
+.carDetail .img img {
+  display: block;
+  /* content: url("https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80"); */
+  object-fit: stretch;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.carDetail .content .line-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 1rem;
+  min-width: 300px;
+  display: inline-block;
+  padding: 5px 80px;
+  border: 3px solid blueviolet;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  border-color: rgb(238, 103, 238);
 }
