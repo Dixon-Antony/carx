@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./Catalog.module.css";
 import Card from "./Card";
 import cars from "./data";
@@ -8,6 +8,7 @@ import Container from "./UI/Container";
 
 const Catalog = () => {
   const location = useLocation();
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -15,12 +16,57 @@ const Catalog = () => {
     });
   }, [location]);
 
-  const cars = useLoaderData();
+  let carsData = useLoaderData();
+
+  const [search, setSearch] = useState("");
+  let [cars, setCars] = useState(carsData);
+
+  const inputHandler = (e) => {
+    setSearch(e.target.value);
+  };
+
+  const searchHandler = (e) => {
+    e.preventDefault();
+    setCars(carsData);
+    console.log("clicked");
+    cars = cars.filter((car) => {
+      let newCars = [];
+      for (let value of Object.values(car)) {
+        newCars.push(value.toLowerCase());
+      }
+
+      for (let value of newCars) {
+        if (value.includes(search)) {
+          return car;
+        }
+        setCars(cars);
+      }
+    });
+    console.log(cars);
+  };
 
   return (
     <React.Fragment>
       <Header />
       <Container>
+        <div className={styles["input-group"]}>
+          <input
+            type="text"
+            className={styles["input"]}
+            id="search"
+            name="search"
+            placeholder="type.."
+            autoComplete="off"
+            value={search}
+            onChange={inputHandler}
+          />
+          <input
+            className={styles["button--submit"]}
+            value="Search"
+            type="submit"
+            onClick={searchHandler}
+          />
+        </div>
         <div className={styles["card-items"]}>
           {cars.map((car) => (
             <Card
@@ -33,7 +79,7 @@ const Catalog = () => {
               make={car.make}
               variant={car.variant}
               transmission={car.transmission}
-              img={car.img}
+              img={car.img1}
             />
           ))}
         </div>

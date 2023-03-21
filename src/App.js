@@ -7,8 +7,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Catalog from "./components/Catalog";
 import { useEffect } from "react";
 import CarDetail from "./components/CarDetail";
+import Gallery from "./components/Gallery";
 import { loader as carsLoader } from "./components/Catalog";
 import { loader as carDetailLoader } from "./components/CarDetail";
+import { loader as carImagesLoader } from "./components/Gallery";
 import Error from "./components/Error";
 
 const router = createBrowserRouter([
@@ -26,6 +28,13 @@ const router = createBrowserRouter([
     path: "/catalog/:id",
     element: <CarDetail />,
     loader: carDetailLoader,
+    errorElement: <Error />,
+  },
+  {
+    path: "/gallery/:id",
+    element: <Gallery />,
+    loader: carImagesLoader,
+    errorElement: <Error />,
   },
 ]);
 

@@ -1,0 +1,41 @@
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.btn button {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border: 2px solid blueviolet;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn button:hover {
+  border-color: rgb(238, 103, 238);
+  transform: scale(1.1);
+}
+
+.slideshow-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 3rem 4rem;
+  background-color: rgba(0, 0, 0, 0.96);
+  height: 100vh;
+}

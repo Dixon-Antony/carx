@@ -34,6 +34,11 @@
   height: 100%;
   width: 100%;
   border-radius: 5px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carDetail .img img:hover {
+  transform: scale(1.05);
 }
 
 .carDetail .content .line-1 {

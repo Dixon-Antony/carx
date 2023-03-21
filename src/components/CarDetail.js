@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import Container from "./UI/Container";
 import FurtherDetail from "../components/FurtherDetail";
+import { Link } from "react-router-dom";
 
 const CarDetail = () => {
   const [hoverState, setHoverState] = useState(false);
@@ -36,7 +37,9 @@ const CarDetail = () => {
         <div className={styles.detailContainer}>
           <div className={styles.carDetail}>
             <div className={styles.img}>
-              <img src={car[0].img} alt="hello" />
+              <Link to={`/gallery/${car[0].id}`} className={styles["card-btn"]}>
+                <img src={car[0].img1} alt="hello" />
+              </Link>
             </div>
             <div className={styles.content}>
               <div className={styles["line-1"]}>
