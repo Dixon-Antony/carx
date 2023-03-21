@@ -9,11 +9,13 @@ import { useEffect } from "react";
 import CarDetail from "./components/CarDetail";
 import { loader as carsLoader } from "./components/Catalog";
 import { loader as carDetailLoader } from "./components/CarDetail";
+import Error from "./components/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainContent />,
+    errorElement: <Error />,
   },
   {
     path: "/catalog",
@@ -31,14 +33,7 @@ function App() {
   useEffect(() => {
     document.title = "Car-X";
   }, []);
-  return (
-    <React.Fragment>
-      <Header />
-      <Container>
-        <RouterProvider router={router} />
-      </Container>
-    </React.Fragment>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
