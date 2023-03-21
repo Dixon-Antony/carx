@@ -8,6 +8,7 @@ const Catalog = (props) => {
       {props.cars.map((car) => (
         <Card
           key={car.id}
+          id={car.id}
           brand={car.brand}
           model={car.model}
           price={car.price}
