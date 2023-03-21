@@ -1,14 +1,24 @@
 import React from "react";
 import styles from "./CarDetail.module.css";
 import cars from "./data";
-import { useLoaderData } from "react-router-dom";
-import { useState } from "react";
+import { useLoaderData, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Header from "./Header";
 import Container from "./UI/Container";
 import FurtherDetail from "../components/FurtherDetail";
 
 const CarDetail = () => {
   const [hoverState, setHoverState] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location]);
+
   const car = useLoaderData();
 
   const focusHandler = () => {
