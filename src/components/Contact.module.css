@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  height: 91.2vh;
+  height: 165vh;
 }
 
 .contact-heading {
@@ -55,4 +55,17 @@
 }
 .carDetail .left div:nth-child(even) i {
   color: rgb(238, 103, 238);
+}
+
+.map {
+}
+
+.map iframe {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+  width: 92vw;
+  border-radius: 5px;
 }
