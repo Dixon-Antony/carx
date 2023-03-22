@@ -1,0 +1,58 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 91.2vh;
+}
+
+.contact-heading {
+  display: flex;
+  width: 90vw;
+  justify-content: flex-start;
+}
+
+.carDetail {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+  padding: 40px;
+  margin: 80px;
+  height: 55vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  width: 70%;
+}
+
+.carDetail .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 70px;
+}
+
+.carDetail .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.carDetail .left div {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.carDetail .left div i {
+  padding-top: 5px;
+}
+.carDetail .left div:nth-child(odd) i {
+  color: blueviolet;
+}
+.carDetail .left div:nth-child(even) i {
+  color: rgb(238, 103, 238);
+}

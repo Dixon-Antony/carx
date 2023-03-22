@@ -6,3 +6,25 @@
   box-sizing: border-box;
   font-family: Quicksand;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(238, 103, 238);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blueviolet;
+}

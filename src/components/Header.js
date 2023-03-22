@@ -17,15 +17,13 @@ const Header = (props) => {
         </div>
         <ul>
           <li>
-            <Link to="/catalog" onClick={navigateHandler}>
-              Catalog
-            </Link>
+            <Link to="/catalog">Catalog</Link>
           </li>
           <li>
-            <a href="search">Search</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="profile">Profile</a>
+            <Link to="/catalog">Help</Link>
           </li>
         </ul>
       </nav>

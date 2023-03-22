@@ -8,6 +8,7 @@ import Catalog from "./components/Catalog";
 import { useEffect } from "react";
 import CarDetail from "./components/CarDetail";
 import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
 import { loader as carsLoader } from "./components/Catalog";
 import { loader as carDetailLoader } from "./components/CarDetail";
 import { loader as carImagesLoader } from "./components/Gallery";
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
     element: <Gallery />,
     loader: carImagesLoader,
     errorElement: <Error />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 
