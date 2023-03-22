@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import CarDetail from "./components/CarDetail";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import About from "./components/About";
 import { loader as carsLoader } from "./components/Catalog";
 import { loader as carDetailLoader } from "./components/CarDetail";
 import { loader as carImagesLoader } from "./components/Gallery";
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 

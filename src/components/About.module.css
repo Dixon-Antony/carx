@@ -1,0 +1,73 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 200vh;
+}
+.about-heading {
+  display: flex;
+  width: 90vw;
+  justify-content: flex-start;
+}
+
+.about {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+  padding: 40px;
+  margin: 80px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 70%;
+}
+
+.about .section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  justify-content: space-evenly;
+  padding: 60px 0;
+}
+
+.icon {
+  height: 200px;
+}
+
+.about .section .left,
+.about .section .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about .section i {
+  padding-top: 40px;
+  transition: color 0.2s ease-in-out;
+}
+
+.about .section:nth-child(odd) i:hover {
+  color: blueviolet;
+}
+
+.about .section:nth-child(even) i:hover {
+  color: rgb(238, 103, 238);
+}
+
+.about .section:nth-child(odd) h1 {
+  color: blueviolet;
+}
+
+.about .section:nth-child(even) h1 {
+  color: rgb(238, 103, 238);
+}
