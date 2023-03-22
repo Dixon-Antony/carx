@@ -7,41 +7,10 @@
   padding: 4rem;
 }
 
-.input-group {
+.catalog-container {
   display: flex;
-  margin-top: 4rem;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.input {
-  min-height: 40px;
-  min-width: 250px;
-  padding: 0 1rem;
-  color: #fff;
-  font-size: 15px;
-  border: 2px solid blueviolet;
-  border-radius: 20px 0 0 20px;
-  background-color: transparent;
-}
-
-.button--submit {
-  min-height: 40px;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 0 20px 20px 0;
-  background-color: blueviolet;
-  color: #fff;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.button--submit:hover {
-  background-color: rgb(238, 103, 238);
-}
-
-.input:focus,
-.input:focus-visible {
-  border-color: rgb(238, 103, 238);
-  outline: none;
+  min-height: 91.2vh;
 }

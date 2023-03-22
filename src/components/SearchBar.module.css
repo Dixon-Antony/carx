@@ -1,0 +1,22 @@
+.input-group {
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.input {
+  min-height: 40px;
+  min-width: 250px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 2px solid blueviolet;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.input:focus,
+.input:focus-visible {
+  border-color: rgb(238, 103, 238);
+  outline: none;
+}
