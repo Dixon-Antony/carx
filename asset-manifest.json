@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/carx/static/css/main.39d7dbf7.css",
+    "main.js": "/carx/static/js/main.2f0d553c.js",
+    "static/media/porsche1.jpg": "/carx/static/media/porsche1.ef024db66dfd0e8aec11.jpg",
+    "index.html": "/carx/index.html",
+    "main.39d7dbf7.css.map": "/carx/static/css/main.39d7dbf7.css.map",
+    "main.2f0d553c.js.map": "/carx/static/js/main.2f0d553c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39d7dbf7.css",
+    "static/js/main.2f0d553c.js"
+  ]
+}
