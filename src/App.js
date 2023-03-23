@@ -1,7 +1,5 @@
 import "./App.css";
 import React from "react";
-import Header from "./components/Header";
-import Container from "./components/UI/Container";
 import MainContent from "./components/MainContent";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Catalog from "./components/Catalog";

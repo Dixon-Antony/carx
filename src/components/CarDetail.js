@@ -7,9 +7,11 @@ import Header from "./Header";
 import Container from "./UI/Container";
 import FurtherDetail from "../components/FurtherDetail";
 import { Link } from "react-router-dom";
+import Buy from "./Buy";
 
 const CarDetail = () => {
   const [hoverState, setHoverState] = useState(false);
+  const [cartShown, setCartShown] = useState(false);
 
   const location = useLocation();
 
@@ -30,8 +32,18 @@ const CarDetail = () => {
     setHoverState(false);
   };
 
+  const buyHandler = (e) => {
+    e.preventDefault();
+    setCartShown(true);
+  };
+
+  const closeHandler = () => {
+    setCartShown(false);
+  };
+
   return (
     <React.Fragment>
+      {cartShown && <Buy hideCart={closeHandler} data={car} />}
       <Header />
       <Container>
         <div className={styles.detailContainer}>
@@ -61,13 +73,19 @@ const CarDetail = () => {
                   ducimus atque eaque quae!
                 </p>
                 <br />
-                <div>
+                <div className={styles["btn-group"]}>
                   <button
-                    className={styles["btn"]}
+                    className={`${styles["btn"]} ${styles["btn1"]}`}
                     onMouseEnter={focusHandler}
                     onMouseLeave={leaveHandler}
                   >
                     {hoverState ? "9998887776" : "Contact"}
+                  </button>
+                  <button
+                    onClick={buyHandler}
+                    className={`${styles["btn"]} ${styles["btn2"]}`}
+                  >
+                    Buy
                   </button>
                 </div>
               </div>

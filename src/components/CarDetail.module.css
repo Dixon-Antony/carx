@@ -51,7 +51,6 @@
 .btn {
   text-align: center;
   margin-top: 1rem;
-  min-width: 300px;
   display: inline-block;
   padding: 5px 80px;
   border: 3px solid blueviolet;
@@ -64,7 +63,20 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.btn1 {
+  min-width: 260px;
+}
+
+.btn2 {
+  min-width: 100px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 2rem;
+}
+
+button:hover {
   transform: scale(1.1);
   border-color: rgb(238, 103, 238);
 }
