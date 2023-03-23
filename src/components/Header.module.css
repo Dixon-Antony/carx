@@ -34,11 +34,7 @@
   padding-bottom: 0.5rem;
   transition: border-color 0.5s;
 }
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav a:active {
   border-color: blueviolet;
-}
-
-.main-nav .current {
-  font-weight: bold;
-  color: blueviolet;
 }

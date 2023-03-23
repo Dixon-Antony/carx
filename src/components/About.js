@@ -16,7 +16,7 @@ const About = () => {
             <div className={styles["section"]}>
               <div className={styles["left"]}>
                 <div className={styles["icon"]}>
-                  <i class="fa-solid fa-wrench fa-8x"></i>
+                  <i className="fa-solid fa-wrench fa-8x"></i>
                 </div>
               </div>
               <div className={styles["right"]}>
@@ -39,14 +39,14 @@ const About = () => {
               </div>
               <div className={styles["right"]}>
                 <div className={styles["icon"]}>
-                  <i class="fa-solid fa-user-astronaut fa-8x"></i>
+                  <i className="fa-solid fa-user-astronaut fa-8x"></i>
                 </div>
               </div>
             </div>
             <div className={styles["section"]}>
               <div className={styles["left"]}>
                 <div className={styles["icon"]}>
-                  <i class="fa-solid fa-headset fa-8x"></i>
+                  <i className="fa-solid fa-headset fa-8x"></i>
                 </div>
               </div>
               <div className={styles["right"]}>

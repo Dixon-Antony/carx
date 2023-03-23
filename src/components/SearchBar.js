@@ -8,14 +8,12 @@ const SearchBar = ({ myCars, setSearch }) => {
     }
 
     let resultsArray = myCars.filter((car) => {
-      console.log(Object.values(car));
       for (let i of Object.values(car)) {
         if (i.toLowerCase().includes(e.target.value.toLowerCase())) {
           return car;
         }
       }
     });
-    console.log(resultsArray);
     setSearch(resultsArray);
   };
 

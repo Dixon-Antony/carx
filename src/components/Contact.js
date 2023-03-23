@@ -15,19 +15,19 @@ const Contact = () => {
           <div className={styles.carDetail}>
             <div className={styles.left}>
               <div>
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
                 <h3>9998887776</h3>
               </div>
               <div>
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
                 <h3>carX@gmail.com</h3>
               </div>
               <div>
-                <i class="fa-solid fa-clock"></i>
+                <i className="fa-solid fa-clock"></i>
                 <h3>9:00 AM - 9:00PM</h3>
               </div>
               <div>
-                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <i className="fa-sharp fa-solid fa-location-dot"></i>
                 <h3>UX Land, Hello World</h3>
               </div>
             </div>
@@ -58,9 +58,9 @@ const Contact = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2612859.537178621!2d8.008100839466906!3d50.24299168073519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799da80f9e76845%3A0x187a543ed0b6bbea!2sPorsche%20Zentrum%20Stuttgart!5e0!3m2!1sen!2sin!4v1679460705236!5m2!1sen!2sin"
               width="600"
               height="450"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

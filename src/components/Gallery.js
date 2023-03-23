@@ -19,7 +19,7 @@ const Gallery = () => {
         <div className={styles["btn"]}>
           <Link to={`/catalog/${params.id}`}>
             <button type="submit">
-              <i class="fa-solid fa-x"></i>
+              <i className="fa-solid fa-x"></i>
             </button>
           </Link>
         </div>
@@ -51,13 +51,11 @@ export function loader({ request, params }) {
   const id = params.id;
 
   const car = cars.filter((car) => car.id === id);
-  console.log(car);
+
   let images = [];
   images.push(car[0].img1);
   images.push(car[0].img2);
   images.push(car[0].img3);
-
-  console.log(images);
 
   return images;
 }

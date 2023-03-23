@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Catalog.module.css";
 import Card from "./Card";
 import cars from "./data";
@@ -23,7 +23,7 @@ const Catalog = () => {
   useEffect(() => {
     setMyCars(carsData);
     setSearch(carsData);
-  }, []);
+  }, [carsData]);
 
   return (
     <React.Fragment>

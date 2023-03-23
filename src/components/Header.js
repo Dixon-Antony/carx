@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
@@ -17,13 +17,34 @@ const Header = (props) => {
         </div>
         <ul>
           <li>
-            <Link to="/catalog">Catalog</Link>
+            <NavLink
+              to="/catalog"
+              style={({ isActive }) => ({
+                borderColor: isActive ? "blueviolet" : undefined,
+              })}
+            >
+              Catalog
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <NavLink
+              to="/about"
+              style={({ isActive }) => ({
+                borderColor: isActive ? "blueviolet" : undefined,
+              })}
+            >
+              About Us
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink
+              to="/contact"
+              style={({ isActive }) => ({
+                borderColor: isActive ? "blueviolet" : undefined,
+              })}
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>
