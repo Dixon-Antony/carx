@@ -81,7 +81,7 @@ const CarDetail = () => {
                   >
                     {hoverState ? "9998887776" : "Contact"}
                   </button>
-                  {car[0].sold == "unsold" && (
+                  {car[0].sold === "unsold" && (
                     <button
                       onClick={buyHandler}
                       className={`${styles["btn"]} ${styles["btn2"]}`}

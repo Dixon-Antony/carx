@@ -32,7 +32,7 @@ const Buy = (props) => {
               >
                 Close
               </button>
-              {props.data[0].sold == "unsold" && (
+              {props.data[0].sold === "unsold" && (
                 <button
                   onClick={buyCar}
                   className={`${styles["btn"]} ${styles["btn2"]}`}
