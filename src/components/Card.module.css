@@ -57,6 +57,11 @@
   color: grey;
 }
 
+.card-content-1,
+.card-content-2,
+.card-content-3 {
+  z-index: 5;
+}
 .card-btn {
   /* Color Code : 138,43,226*/
   margin-top: 1rem;
@@ -72,4 +77,22 @@
 .card-btn:hover {
   transform: scale(1.1);
   border-color: rgb(238, 103, 238);
+}
+
+.sold-overlay {
+  position: absolute;
+  height: 100%;
+  border-radius: 25px 0 25px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.sold-overlay h2 {
+  margin-bottom: 80px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
 }

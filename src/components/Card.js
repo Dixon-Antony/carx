@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
     <div className={styles.card}>
+      {props.sold == "sold" && (
+        <div className={styles["sold-overlay"]}>
+          <h2>Sold Out</h2>
+        </div>
+      )}
       <div className={styles["card-img"]}>
         <img src={props.img} alt="Car" />
       </div>

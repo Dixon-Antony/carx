@@ -44,6 +44,7 @@ const Catalog = () => {
                 variant={car.variant}
                 transmission={car.transmission}
                 img={car.img1}
+                sold={car.sold}
               />
             ))}
           </div>
