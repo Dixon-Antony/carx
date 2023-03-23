@@ -89,7 +89,7 @@ const CarDetail = () => {
                       Buy
                     </button>
                   )}
-                  {car[0].sold == "sold" && (
+                  {car[0].sold === "sold" && (
                     <h2 className={styles["soldOut"]}>Sold Out</h2>
                   )}
                 </div>
