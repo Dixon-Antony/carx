@@ -56,6 +56,7 @@ const Contact = () => {
           <div className={styles["map"]}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2612859.537178621!2d8.008100839466906!3d50.24299168073519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799da80f9e76845%3A0x187a543ed0b6bbea!2sPorsche%20Zentrum%20Stuttgart!5e0!3m2!1sen!2sin!4v1679460705236!5m2!1sen!2sin"
+              title="MapX"
               width="600"
               height="450"
               allowFullScreen=""

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./SearchBar.module.css";
 
 const SearchBar = ({ myCars, setSearch }) => {
@@ -17,9 +17,6 @@ const SearchBar = ({ myCars, setSearch }) => {
     setSearch(resultsArray);
   };
 
-  const searchHandler = (e) => {
-    e.preventDefault();
-  };
   return (
     <div className={styles["input-group"]}>
       <input
