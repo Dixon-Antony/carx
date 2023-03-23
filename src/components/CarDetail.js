@@ -81,12 +81,17 @@ const CarDetail = () => {
                   >
                     {hoverState ? "9998887776" : "Contact"}
                   </button>
-                  <button
-                    onClick={buyHandler}
-                    className={`${styles["btn"]} ${styles["btn2"]}`}
-                  >
-                    Buy
-                  </button>
+                  {car[0].sold == "unsold" && (
+                    <button
+                      onClick={buyHandler}
+                      className={`${styles["btn"]} ${styles["btn2"]}`}
+                    >
+                      Buy
+                    </button>
+                  )}
+                  {car[0].sold == "sold" && (
+                    <h2 className={styles["soldOut"]}>Sold Out</h2>
+                  )}
                 </div>
               </div>
             </div>

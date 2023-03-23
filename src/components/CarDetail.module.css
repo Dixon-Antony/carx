@@ -80,3 +80,7 @@ button:hover {
   transform: scale(1.1);
   border-color: rgb(238, 103, 238);
 }
+
+.soldOut {
+  padding-top: 15px;
+}

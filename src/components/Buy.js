@@ -1,8 +1,15 @@
 import React from "react";
 import Modal from "./UI/Modal";
 import styles from "./Buy.module.css";
+import { changeStatus } from "./data";
 
 const Buy = (props) => {
+  const buyCar = (e) => {
+    e.preventDefault();
+    changeStatus(props.data[0].id);
+    props.hideCart();
+  };
+
   return (
     <Modal hideCart={props.hideCart}>
       <div className={styles["cartContainer"]}>
@@ -25,9 +32,14 @@ const Buy = (props) => {
               >
                 Close
               </button>
-              <button className={`${styles["btn"]} ${styles["btn2"]}`}>
-                Buy
-              </button>
+              {props.data[0].sold == "unsold" && (
+                <button
+                  onClick={buyCar}
+                  className={`${styles["btn"]} ${styles["btn2"]}`}
+                >
+                  Buy
+                </button>
+              )}
             </div>
           </div>
         </div>
