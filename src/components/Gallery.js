@@ -17,7 +17,7 @@ const Gallery = () => {
       <Header />
       <div className={styles["slideshow-container"]}>
         <div className={styles["btn"]}>
-          <Link to={`/catalog/${params.id}`}>
+          <Link to={`/carx/catalog/${params.id}`}>
             <button type="submit">
               <i className="fa-solid fa-x"></i>
             </button>

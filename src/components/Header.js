@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Header = (props) => {
   const navigate = useNavigate();
   const navigateHandler = () => {
-    navigate("/");
+    navigate("/carx");
   };
 
   return (
@@ -18,7 +18,7 @@ const Header = (props) => {
         <ul>
           <li>
             <NavLink
-              to="/catalog"
+              to="/carx/catalog"
               style={({ isActive }) => ({
                 borderColor: isActive ? "blueviolet" : undefined,
               })}
@@ -28,7 +28,7 @@ const Header = (props) => {
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="/carx/about"
               style={({ isActive }) => ({
                 borderColor: isActive ? "blueviolet" : undefined,
               })}
@@ -38,7 +38,7 @@ const Header = (props) => {
           </li>
           <li>
             <NavLink
-              to="/contact"
+              to="/carx/contact"
               style={({ isActive }) => ({
                 borderColor: isActive ? "blueviolet" : undefined,
               })}

@@ -15,33 +15,33 @@ import Error from "./components/Error";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/carx",
     element: <MainContent />,
     errorElement: <Error />,
   },
   {
-    path: "/catalog",
+    path: "/carx/catalog",
     element: <Catalog />,
     loader: carsLoader,
   },
   {
-    path: "/catalog/:id",
+    path: "/carx/catalog/:id",
     element: <CarDetail />,
     loader: carDetailLoader,
     errorElement: <Error />,
   },
   {
-    path: "/gallery/:id",
+    path: "/carx/gallery/:id",
     element: <Gallery />,
     loader: carImagesLoader,
     errorElement: <Error />,
   },
   {
-    path: "/contact",
+    path: "/carx/contact",
     element: <Contact />,
   },
   {
-    path: "/about",
+    path: "/carx/about",
     element: <About />,
   },
 ]);

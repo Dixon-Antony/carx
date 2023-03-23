@@ -27,7 +27,7 @@ const Card = (props) => {
         <h3>{props.transmission}</h3>
       </div>
       <div className={styles["card-content-3"]}>
-        <Link to={`/catalog/${props.id}`} className={styles["card-btn"]}>
+        <Link to={`/carx/catalog/${props.id}`} className={styles["card-btn"]}>
           View
         </Link>
       </div>

@@ -14,7 +14,7 @@ const MainContent = (props) => {
           <div className={styles["main-heading"]}>
             <h1>Welcome to Car-X</h1>
           </div>
-          <Link to="/catalog">
+          <Link to="/carx/catalog">
             <Button type="sumbit" content="View Catalog" />
           </Link>
         </div>

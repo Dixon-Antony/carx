@@ -49,7 +49,10 @@ const CarDetail = () => {
         <div className={styles.detailContainer}>
           <div className={styles.carDetail}>
             <div className={styles.img}>
-              <Link to={`/gallery/${car[0].id}`} className={styles["card-btn"]}>
+              <Link
+                to={`/carx/gallery/${car[0].id}`}
+                className={styles["card-btn"]}
+              >
                 <img src={car[0].img1} alt="hello" />
               </Link>
             </div>

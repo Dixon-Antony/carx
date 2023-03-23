@@ -51,7 +51,6 @@ const FurtherDetail = (props) => {
           <h4>GearBox</h4>
           <h2>{props.details[0].gearBox}</h2>
         </div>
-        <h2></h2>
       </div>
     </div>
   );
