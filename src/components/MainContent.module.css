@@ -6,7 +6,7 @@
 }
 
 .main-content {
-  height: 91.2vh;
+  height: calc(100vh - 4rem);
   padding-top: 100px;
   padding-left: 100px;
   width: 100%;
